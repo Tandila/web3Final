@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack</title>
-    <link rel="stylesheet" href="/dist/app.css">
+    <link rel="stylesheet" href="dist/app.css">
 </head>
 <body>
        
@@ -39,7 +39,8 @@
            <div class="elements">
              <label for="favoriteSubject">favorite Subject :</label>
              <input type="checkbox" name="favoriteSubject" value="physics" id="ch1" checked="checked"> physics 
-             <input type="checkbox" name="favoriteSubject" value="programming"  id="ch2"> Programming 
+             <input type="checkbox" name="favoriteSubject" value="programming"  id="ch2" checked="checked"> Programming
+             
           </div>
 
           <div class="elements">
@@ -54,15 +55,13 @@
            <span class="elements">this submit button print formatted json in html and download pdf <span>
          </fieldset>
        </form>
-
+       <button onclick="changeColor()" class="btn" id="mypol">change color</button>
+       <small>click it after submit form!!! i know its a rude method but it works :D</small>
        <pre><code id="json"></code></pre>
     
 
-
-
-
 <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="/dist/app.js"></script>
+<script src="dist/app.js"></script>
 </body>
 </html>
