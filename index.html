@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack</title>
+    <link rel="stylesheet" href="/dist/app.css">
+</head>
+<body>
+       
+       <form id="myform" type="post">
+         <fieldset>
+           <legend>Json preview </legend>
+           <p>Hello Davit! Please fill out this form</p>
+           <div class="elements">
+             <label for="name">Name :</label>
+             <input  required="required" type="text"  value="Giorgi Tandilashvili" name="fname"  size="20"  />
+           </div>
+            <div class="elements">
+             <label for="Age">Age :</label>
+             <input required="required" type="number" value="21" id="age" name="age" size="10" />
+           </div>
+           <div class="elements">
+            <label for="birthDate">birthDate :</label>
+            <input required="required" type="date" id="birthDate" name="birthDate" size="10" />
+          </div>   
+           <div class="elements">
+             <label for="pro"> Profession :</label>
+             <select name="pro">
+          <option value="Student">Student</option>
+          <option value="Engineer" selected="selected">Engineer</option>
+          </select>
+           </div>      
+           <div class="elements">
+           <label for="Gender">Gender: </label>
+             <input type="radio" name="gender" value="Male" checked="checked" id="r1"> Male 
+         <input type="radio" name="gender" value="Female" id="r2"> Female 
+       </div>  
+           <div class="elements">
+             <label for="favoriteSubject">favorite Subject :</label>
+             <input type="checkbox" name="favoriteSubject" value="physics" id="ch1" checked="checked"> physics 
+             <input type="checkbox" name="favoriteSubject" value="programming"  id="ch2"> Programming 
+          </div>
+
+          <div class="elements">
+            <label for="favorite_movies">favorite Movies :</label> <br>
+            <input  required="required" type="text" id="ch3"  value="The ring" name="favorite_movies"  size="20"  />
+            <input  required="required" type="text" id="ch4"  value="sillent hill" name="favorite_movies"  size="20"  />
+         </div>
+       
+           <div class="submit">
+              <input type="submit" id="btn" name="btn" class="btn" value="Submit" />
+           </div>
+           <span class="elements">this submit button print formatted json in html and download pdf <span>
+         </fieldset>
+       </form>
+
+       <pre><code id="json"></code></pre>
+    
+
+
+
+
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/dist/app.js"></script>
+</body>
+</html>
